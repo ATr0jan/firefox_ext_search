@@ -14,7 +14,7 @@ It then parses the Json in search of the addons:
 To do a declaritive install of Firefox in Nix you will need to obtain the Sort URL and the GUID so that we can 
 declare our wanted plugins in `Configuration.nix` using the Firefox Policies attribute.
 
-# Concept Code
+# Concept Config File
 
 ```
 programs.firefox.policies = {

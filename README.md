@@ -1,8 +1,14 @@
 # Firefox Extension Search
-This is a small script that will allow you to enter an extension you are looking to run in Firefox.
+This is a small script that will allow you to enter an extension you want to install in Firefox.
 When you run the script it will ask you what extension you are looking for then it will reach out to the
-Addon search URL and return the Top 3 results with there headers then parse the Json in search of the addons
-name, GUID, ShortID, and information regarding the EULA/Copyright.
+Mozilla Addon API and search for the Top 3 results.
+It then parses the Json in search of the addons:
+- Name
+- GUID
+- ShortID
+- information regarding the EULA/Copyright.
+
+[Link to Mozilla Addon API Doc](https://mozilla.github.io/addons-server/topics/api/addons.html)
 
 ## Why?
 To do a declaritive install of Firefox in Nix you will need to obtain the Sort URL and the GUID so that we can 
